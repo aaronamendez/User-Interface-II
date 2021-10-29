@@ -115,7 +115,9 @@ section {
 
 html {
 	font-size: 62.5%;
-	background-color: #fff;
+	background-color: black;
+	color: white;
+	font-family: "Righteous", cursive;
 }
 
 body {
@@ -241,6 +243,10 @@ h2:hover {
 
 .projects {
 	margin-top: 3%;
+}
+
+.projects img {
+	padding: 1rem;
 }
 
 .row {
