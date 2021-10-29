@@ -108,7 +108,8 @@ section {
 	padding: 0;
 	margin: 0;
 	max-width: 100%;
-	border: 1px solid grey;
+	/* Enable below for testing sizing/page */
+	/* border: 1px solid grey; */
 	font-family: "Righteous", cursive;
 }
 
@@ -137,6 +138,11 @@ h1 {
 	font-size: 3rem;
 	font-family: "Righteous", cursive;
 }
+
+/* h1:hover {
+	transition: 2s;
+	Need to do something here maybe?
+} */
 
 h1 span {
 	color: red;
@@ -199,7 +205,7 @@ nav a:hover {
 	background-size: cover;
 	color: white;
 	font-size: large;
-	width: 600px;
+	width: 800px;
 	height: 500px;
 }
 
@@ -229,4 +235,39 @@ h2:hover {
 	transition: 1s;
 	color: red;
 	background-color: black;
+}
+
+/* Projects Section Styles */
+
+.projects {
+	margin-top: 3%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 1%;
+}
+
+.project-divs {
+	text-align: center;
+}
+
+footer {
+	margin-top: 5%;
+	background-color: red;
+	padding: 100px;
+	text-align: center;
+}
+
+.bottom div img {
+	width: 3%;
+}
+
+.bottom button a {
+	text-decoration: none;
+	background-color: red;
+	color: white;
+	font-size: 30px;
 }
