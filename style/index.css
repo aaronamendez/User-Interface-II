@@ -109,10 +109,12 @@ section {
 	margin: 0;
 	max-width: 100%;
 	border: 1px solid grey;
+	font-family: "Righteous", cursive;
 }
 
 html {
 	font-size: 62.5%;
+	background-color: #fff;
 }
 
 body {
@@ -120,16 +122,24 @@ body {
 	line-height: 1.5;
 }
 
+/* Nav styles */
+
 nav {
 	display: flex;
 	justify-content: flex-end;
 	text-align: center;
+	font-family: "Righteous", cursive;
 }
 
 h1 {
 	margin-left: 2%;
 	margin-top: 3%;
 	font-size: 3rem;
+	font-family: "Righteous", cursive;
+}
+
+h1 span {
+	color: red;
 }
 
 nav a {
@@ -137,7 +147,48 @@ nav a {
 	padding: 1% 2rem;
 	text-decoration: none;
 	margin-right: 2%;
+	background-color: #d02b2b;
+	color: white;
 }
+
+nav a:hover {
+	transition: 1s;
+	color: red;
+	background-color: black;
+}
+
+/* Wiggle Effect */
+nav a:hover {
+	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+/* First Section Styles */
 .main {
 	margin-top: 3rem;
 }
@@ -148,18 +199,34 @@ nav a {
 	background-size: cover;
 	color: white;
 	font-size: large;
-	width: 100%;
+	width: 600px;
 	height: 500px;
+}
+
+.top {
+	display: flex;
+	justify-content: center;
 }
 
 h2 {
 	font-size: 3rem;
-	margin-bottom: 1%;
+	margin-bottom: 2%;
+}
+
+h2:hover {
+	transition: 1s;
+	color: red;
 }
 
 .btn-img a {
 	text-decoration: none;
 	color: white;
-	background-color: red;
+	background-color: #d02b2b;
 	padding: 1rem;
+}
+
+.btn-img a:hover {
+	transition: 1s;
+	color: red;
+	background-color: black;
 }
