@@ -252,8 +252,12 @@ h2:hover {
 .row {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
-	padding: 1%;
+}
+
+.row div {
+	width: 30%;
 }
 
 .project-divs {
@@ -280,9 +284,7 @@ footer {
 
 /* MEDIA QUERIES HERE FOR MOBILE AND TABLETS */
 @media (max-width: 500px) {
-	html {
-		/* background-color: white; */
-	}
+	/* Media for Nav */
 
 	h1 {
 		text-align: center;
@@ -299,12 +301,25 @@ footer {
 		width: 25%;
 	}
 
+	/* Media for Main Section */
+
 	.btn-img {
 		height: 200px;
 	}
 
 	.main {
 		width: 80%;
+	}
+
+	/* Media for Projects Section */
+
+	.row div {
+		width: 40%;
+	}
+
+	/* Media for Footer Section */
+	footer {
+		padding: 3rem;
 	}
 }
 
@@ -315,7 +330,8 @@ footer {
 /* DONE */
 
 /* 3. Make the projects wrap up in two columns */
+/* DONE */
 
 /* 4. Make the footer padding a bit smaller, but the socials a bit larger  */
-
+/*  */
 /* 5. Add a media effect for 800px */
