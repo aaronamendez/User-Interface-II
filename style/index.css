@@ -287,12 +287,14 @@ footer {
 }
 
 /* MEDIA QUERIES HERE FOR MOBILE AND TABLETS */
-@media (max-width: 500px) {
+/* 800PX */
+@media (max-width: 800px) {
 	/* Media for Nav */
 
 	h1 {
 		text-align: center;
 		padding-bottom: 1rem;
+		margin-left: 0;
 	}
 
 	nav {
@@ -304,7 +306,10 @@ footer {
 		margin-right: 0; /* Resetting previous Margin */
 		width: 25%;
 	}
+}
 
+/* 500PX */
+@media (max-width: 500px) {
 	/* Media for Main Section */
 
 	.btn-img {
@@ -336,15 +341,4 @@ footer {
 	}
 }
 
-/* 1. Fix the Navbar */
-/* DONE */
-
-/* 2. Make the main image not take up the entire width of the screen */
-/* DONE */
-
-/* 3. Make the projects wrap up in two columns */
-/* DONE */
-
-/* 4. Make the footer padding a bit smaller, but the socials a bit larger  */
-/* DONE */
-/* 5. Add a media effect for 800px */
+/* Add some Accessability Features */
