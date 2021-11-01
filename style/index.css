@@ -282,6 +282,10 @@ footer {
 	font-size: 30px;
 }
 
+.bottom button {
+	border: none;
+}
+
 /* MEDIA QUERIES HERE FOR MOBILE AND TABLETS */
 @media (max-width: 500px) {
 	/* Media for Nav */
@@ -321,6 +325,15 @@ footer {
 	footer {
 		padding: 3rem;
 	}
+
+	.bottom button {
+		border: none;
+	}
+
+	.bottom div img {
+		margin-top: 1rem;
+		width: 3rem;
+	}
 }
 
 /* 1. Fix the Navbar */
@@ -333,5 +346,5 @@ footer {
 /* DONE */
 
 /* 4. Make the footer padding a bit smaller, but the socials a bit larger  */
-/*  */
+/* DONE */
 /* 5. Add a media effect for 800px */
