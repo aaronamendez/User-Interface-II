@@ -279,11 +279,43 @@ footer {
 }
 
 /* MEDIA QUERIES HERE FOR MOBILE AND TABLETS */
+@media (max-width: 500px) {
+	html {
+		/* background-color: white; */
+	}
 
-/* Fix the Navbar */
+	h1 {
+		text-align: center;
+		padding-bottom: 1rem;
+	}
 
-/* Make the main image not take up the entire width of the screen */
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
 
-/* Make the projects wrap up in two columns */
+	nav a {
+		margin-right: 0; /* Resetting previous Margin */
+		width: 25%;
+	}
 
-/* Make the footer a bit smaller  */
+	.btn-img {
+		height: 200px;
+	}
+
+	.main {
+		width: 80%;
+	}
+}
+
+/* 1. Fix the Navbar */
+/* DONE */
+
+/* 2. Make the main image not take up the entire width of the screen */
+/* DONE */
+
+/* 3. Make the projects wrap up in two columns */
+
+/* 4. Make the footer padding a bit smaller, but the socials a bit larger  */
+
+/* 5. Add a media effect for 800px */
